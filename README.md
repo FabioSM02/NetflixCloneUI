@@ -2,7 +2,7 @@
 
 - The project consists in clone the netflix' interface
 
-<img src="https://github.com/FabioSM02/NetflixCloneUI/src/assets/NetflixCloneUI.PNG" alt="Netflix-clone-ui" />
+<img src="https://github.com/FabioSM02/NetflixCloneUI/blob/master/src/assets/Screen.PNG" alt="Netflix-clone-ui" />
 
 ## How I visualize the Project in web?
 
@@ -40,5 +40,3 @@
   
 
   ## Project link
-
-- https://www.netlify.com/
