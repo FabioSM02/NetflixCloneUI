@@ -1,0 +1,120 @@
+:root{
+    --color-background-gradient: #111;
+    --color-text-rating: #46D369;
+    --color-text-description: #999;
+    --color-background-watch-button: #FFF;
+    --color-watch-button: #000;
+    --color-add-list-button: #333;
+}
+
+.featured{
+    height: 100vh;
+}
+
+.featured-vertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, var(--color-background-gradient) 10%, transparent 90%);
+}
+
+.featured-horizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, var(--color-background-gradient) 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0 130px 30px;
+}
+
+.featured-name{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featured-info{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featured-points, 
+.featured-year, 
+.featured-seasons{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featured-points{
+    color: var(--color-text-rating);
+}
+
+.featured-description{
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--color-text-description);
+    max-width: 40%;
+}
+
+.featured-buttons{
+    margin-top: 15px;
+}
+
+.featured-watch-button,
+.featured-add-list-button{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition: all ease .4s;
+}
+
+.featured-watch-button:hover,
+.featured-add-list-button:hover{
+    opacity: .7;
+}
+
+.featured-watch-button{
+    background-color: var(--color-background-watch-button);
+    color: var(--color-watch-button);
+}
+
+.featured-add-list-button{
+    background-color: var(--color-add-list-button);
+    color: var(--color-background-watch-button);
+}
+
+.featured-genres{
+    margin-top: 15px;
+    font-size: 18px;
+    color: var(--color-text-description);
+}
+
+@media(max-width:760px){
+    .featured{
+        height: 90vh;
+    }
+    .featured-name{
+        font-size: 40px;
+    }
+    .featured-info{
+        font-size: 16px;
+    }
+    .featured-description{
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .featured-watch-button,
+    .featured-add-list-button{
+        font-size:16px;
+        padding: 8px 10px;
+    }
+    .featured-genres{
+        font-size: 14px;
+    }
+}
